@@ -1,0 +1,96 @@
+/* General */
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Landing */
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-70px);
+        opacity: 0;
+        filter: blur(8px);
+      }
+    20% {
+      transform: translateY(-100px);
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+section#particles-js{
+    background-color: var(--global-dark-gray);
+    color: var(--global-white)
+}
+
+section#particles-js div.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: relative;
+    animation: slide-bottom 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s ;
+    pointer-events: none;
+}
+
+section#particles-js div.content *{
+    pointer-events: all;
+}
+
+canvas.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+section#particles-js span.nom{
+    font-family: krona_one;
+    font-size: 48px;
+    line-height: 0.1em;
+    text-transform: uppercase;
+}
+
+section#particles-js span.prenom{
+    font-family: krona_one;
+    font-size: 128px;
+    text-transform: uppercase;
+}
+
+section#particles-js span.fonction{
+    font-family: krona_one;
+    font-size: 32px;
+    line-height: 0.3em;
+    text-transform: uppercase;
+}
+
+/* Présentation */
+
+section#presentation{
+    background-color: var(--global-light-tint);
+}
+
+section#presentation div.container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#presentation span.title{
+    font-size: 30px;
+}
+
+section#presentation img{
+    aspect-ratio: 1/1;
+    background-color: aliceblue;
+    width: 200px
+}

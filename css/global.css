@@ -1,0 +1,56 @@
+
+/***** Font *****/
+
+@font-face {
+    font-family: krona_one;
+    src: url('../resources/fonts/Krona_One/KronaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: kumbh_sans_medium;
+    src: url('../resources/fonts/Kumbh_Sans/KumbhSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: kumbh_sans_semibold;
+    src: url('../resources/fonts/Kumbh_Sans/KumbhSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: kumbh_sans_bold;
+    src: url('../resources/fonts/Kumbh_Sans/KumbhSans-Bold.ttf');
+}
+
+
+/***** Colors *****/
+
+body{
+    --global-black : #000;
+    --global-dark-gray : #131313;
+    --global-light-gray : #e0e0e0;
+    --global-almost-white : #efefef;
+    --global-almost-white : #efefef;
+    --global-white : #fff;
+    --global-almost-white : #efefef;
+    --global-dark-tint : #13370A;
+    --global-tint : #6BD844;
+    --global-light-tint : #9BF984;
+}
+
+/***** Other *****/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: kumbh_sans_medium;
+    font-size: 18px;
+    color: var(--global-black);
+}
+
+.container{
+    max-width: 1280px;
+    width: 80%;
+}

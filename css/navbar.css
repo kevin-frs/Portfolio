@@ -1,0 +1,30 @@
+nav{
+    background-color: var(--global-black);
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a{
+    font-family: krona_one;
+    text-decoration: none;
+    color: var(--global-light-gray)
+}
+
+nav div.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+nav div.container div.right{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div.container div.right a{
+    padding: 0 30px;
+}
