@@ -1,12 +1,3 @@
-/* General */
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* Landing */
-
 @keyframes slide-bottom {
     0% {
         transform: translateY(-70px);
@@ -53,44 +44,25 @@ canvas.particles-js-canvas-el{
     z-index: 1
 }
 
-section#particles-js span.nom{
+section#particles-js span.name{
     font-family: krona_one;
     font-size: 48px;
     line-height: 0.1em;
     text-transform: uppercase;
+    text-shadow: #fff4 0 0 30px;
 }
 
-section#particles-js span.prenom{
+section#particles-js span.surname{
     font-family: krona_one;
     font-size: 128px;
     text-transform: uppercase;
+    text-shadow: #fff4 0 0 30px;
 }
 
-section#particles-js span.fonction{
+section#particles-js span.function{
     font-family: krona_one;
     font-size: 32px;
     line-height: 0.3em;
     text-transform: uppercase;
-}
-
-/* Présentation */
-
-section#presentation{
-    background-color: var(--global-light-tint);
-}
-
-section#presentation div.container{
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-section#presentation span.title{
-    font-size: 30px;
-}
-
-section#presentation img{
-    aspect-ratio: 1/1;
-    background-color: aliceblue;
-    width: 200px
+    text-shadow: #fff4 0 0 30px;
 }

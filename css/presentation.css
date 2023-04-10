@@ -1,0 +1,27 @@
+section#presentation{
+    background-color: var(--global-light-tint);
+}
+
+section#presentation div.container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#presentation img{
+    aspect-ratio: 1/1;
+    background-color: aliceblue;
+    width: 300px;
+    overflow: unset;
+}
+
+section#presentation div.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+section#presentation h2{
+    text-align: left;
+    margin-bottom: 0.5em;
+}

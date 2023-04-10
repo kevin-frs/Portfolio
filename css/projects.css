@@ -1,0 +1,29 @@
+section#projects{
+    background-color: var(--global-light-tint);
+}
+
+section#projects div.container{
+    padding: 50px 0 0;
+}
+
+section#projects div.project-list{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+}
+
+section#projects div.single-project{
+    background-color: var(--global-black);
+    color: var(--global-white);
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 15px;
+    box-shadow: #0008 0 5px 30px 0;
+}
+
+section#projects div.single-project h2.title{
+    font-size: 30px;
+    font-family: krona_one;
+    text-align: left;
+    margin-bottom: 20px;
+}

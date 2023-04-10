@@ -1,0 +1,29 @@
+section#photos{
+    background-color: var(--global-white);
+}
+
+section#photos div.container{
+    padding: 50px 0 0;
+}
+
+section#photos div.photos-list{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 1px;
+}
+
+section#projects div.single-project{
+    background-color: var(--global-black);
+    color: var(--global-white);
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 15px;
+    box-shadow: #0008 0 5px 30px 0;
+}
+
+section#projects div.single-project h2.title{
+    font-size: 30px;
+    font-family: krona_one;
+    text-align: left;
+    margin-bottom: 20px;
+}

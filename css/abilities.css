@@ -1,0 +1,40 @@
+section#abilities{
+    background-color: var(--global-black);
+    color: var(--global-white);
+}
+
+section#abilities div.container{
+    padding: 50px 0;
+}
+
+section#abilities div.box-grid{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+section#abilities div.box-grid div.box{
+    background-color: var(--global-white);
+    border-radius: 30px;
+    color: var(--global-black);
+    padding: 6% 12%;
+    box-shadow:#0004 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+section#abilities div.box-grid div.box-1{
+    transform: translateX(3%);
+}
+
+section#abilities div.box-grid div.box-2{
+    transform: translateX(-3%) translateY(30%);
+}
+
+section#abilities div.box-grid div.box-3{
+    z-index: 1;
+    position: relative;
+    transform: translateX(13%) translateY(-12%);
+}
