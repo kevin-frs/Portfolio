@@ -28,6 +28,10 @@ section#projects div.single-project h2.title{
     margin-bottom: 20px;
 }
 
+section#projects div.single-project span.description a{
+    text-decoration: underline;
+}
+
 /* Responsive */
 
 @media (max-width: 768px){
