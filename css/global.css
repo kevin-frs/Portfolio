@@ -26,15 +26,13 @@
 
 body{
     --global-black : #000;
-    --global-dark-gray : #131313;
+    --global-dark-gray : #1f1f1f;
     --global-light-gray : #e0e0e0;
     --global-almost-white : #efefef;
     --global-almost-white : #efefef;
     --global-white : #fff;
     --global-almost-white : #efefef;
-    --global-dark-tint : #13370A;
-    --global-tint : #6BD844;
-    --global-light-tint : #9BF984;
+    --global-light-tint : #84adff;
 }
 
 /***** Other *****/
@@ -52,6 +50,7 @@ body{
 
 section{
     position: initial;
+    overflow: hidden;
 }
 
 .container{
@@ -70,4 +69,31 @@ h2{
     font-family: krona_one;
     text-align: center;
     font-size: 30px;
+}
+
+h3{
+    font-family: kumbh_sans_semibold;
+    font-size: 25px;
+}
+
+p{
+    margin: 0.5em 0;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
 }

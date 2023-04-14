@@ -13,24 +13,43 @@
     <link rel="stylesheet" href="./css/abilities.css" />
     <link rel="stylesheet" href="./css/projects.css" />
     <link rel="stylesheet" href="./css/photos.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
 
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="container">
         <div class="left">
-          <a href="index.html">Logo</a>
+          <a href="index.html">Kevin</a>
         </div>
         <div class="right">
-          <a href="">Présentation</a>
-          <a href="">Projets</a>
-          <a href="">Photos</a>
-          <a href="">Contact</a>
+          <a href="#presentation">Présentation</a>
+          <a href="#projects">Projets</a>
+          <a href="#photos">Photos</a>
+          <a href="#contact">Contact</a>
         </div>
+        <a id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
       </div>
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a id="closeBtn" class="close">×</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
     <section id="particles-js">
       <div class="content">
@@ -42,14 +61,23 @@
 
     <section id="presentation">
       <div class="container">
-        <img src="" alt="" />
+        <img src="./resources/photos/perso_1.jpg" alt="" />
         <div class="text">
           <h2>Qui suis-je ?</h2>
-          <span class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
-            officiis temporibus ullam enim id ratione eligendi ipsa voluptates
-            quae quas? Cumque, placeat!
+          <span class="description"
+            ><p>
+              Je m'appelle Kevin Forsans, j'ai 21 ans et je suis étudiant en
+              licence professionnelle RTAI (Responsable Technique d'Application
+              Internet) à l'université Toulouse Capitole. J'évolue dans le
+              domaine du développement web au travers de mes projets personnels,
+              de mes études mais également de mon implication professionnelle au
+              sein d'une entreprise de création de sites web.
+            </p>
+            <p>
+              J'ai toujous été passionné par la création graphique, par la
+              technologie et plus largement tout ce qui touche à la création de
+              contenu.
+            </p>
           </span>
         </div>
       </div>
@@ -60,25 +88,132 @@
         <h1>Mes compétences</h1>
         <div class="box-grid">
           <div class="box box-1">
-            <h2 class="title">Boite 1</h2>
-            <span class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
-              officiis temporibus ullam enim id ratione eligendi ipsa voluptates
-              quae quas? Cumque, placeat!
-            </span>
+            <h2 class="title">Logiciels</h2>
+            <div class="abilities-list">
+              <a
+                class="single-ability"
+                href="https://www.adobe.com/fr/products/photoshop"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/photoshop.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">Photoshop</h3>
+              </a>
+              <a
+                class="single-ability"
+                href="https://www.adobe.com/fr/products/illustrator"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/illustrator.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">Illustrator</h3>
+              </a>
+              <a
+                class="single-ability"
+                href="https://www.figma.com"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/figma.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">Figma</h3>
+              </a>
+            </div>
           </div>
+
           <div class="box box-2">
-            <h2 class="title">Boite 2</h2>
+            <h2 class="title">Langages</h2>
+            <div class="abilities-list">
+              <a
+                class="single-ability"
+                href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/html.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">HTML</h3>
+              </a>
+              <a
+                class="single-ability"
+                href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/css.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">CSS</h3>
+              </a>
+              <a
+                class="single-ability"
+                href="https://developer.mozilla.org/fr/docs/Web/Javascript"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/javascript.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">CSS</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="box box-3">
+            <h2 class="title">Technologies</h2>
+            <div class="abilities-list">
+              <a
+                class="single-ability"
+                href="https://git-scm.com/"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/git.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">Git</h3>
+              </a>
+              <a
+                class="single-ability"
+                href="https://wordpress.com/fr/"
+                target="_blank"
+              >
+                <img
+                  src="./resources/photos/abilities/wordpress.svg"
+                  class="ability-img"
+                />
+                <h3 class="ability-name">Wordpress</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h1>Mes projets</h1>
+        <div class="project-list">
+          <div class="single-project">
+            <h2 class="title">Portfolio</h2>
             <span class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
-              officiis temporibus ullam enim id ratione eligendi ipsa voluptates
-              quae quas? Cumque, placeat!
+              Ce projet s'inscrit à la fois dans un contexte universitaire et
+              personnel. J'ai toujours voulu créer un site web, regroupant des
+              informations à mon propos, où je pourrai partager mes compétences,
+              mes projets et autres. Aujourd'hui c'est chose faite, il est
+              toujours en développement, il est accessible à l'adresse suivante
+              :
+              <br /><a href="kevinfrs.com">kevinfrs.com</a>
             </span>
           </div>
-          <div class="box box-3">
-            <h2 class="title">Boite 3</h2>
+          <div class="single-project">
+            <h2 class="title">Lorem</h2>
             <span class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
@@ -90,27 +225,65 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="photos">
       <div class="container">
-        <h1>Mes projets</h1>
-        <div class="project-list">
-          <div class="single-project">
-            <h2 class="title">Lorem</h2>
-            <span class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
-              officiis temporibus ullam enim id ratione eligendi ipsa voluptates
-              quae quas? Cumque, placeat!
-            </span>
+        <h1>Mes photos</h1>
+        <div class="photos-list">
+          <span class="photo little-square-1"
+            ><img src="./resources/photos/square_3.jpg"
+          /></span>
+          <span class="photo little-square-2"
+            ><img src="./resources/photos/square_2.jpg"
+          /></span>
+          <span class="photo medium-square"
+            ><img src="./resources/photos/square_4.jpg"
+          /></span>
+          <span class="photo large-vertical"
+            ><img src="./resources/photos/long_1.jpg"
+          /></span>
+          <span class="photo large-horizontal"
+            ><img src="./resources/photos/large_1.jpg"
+          /></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="text left">
+          <div class="up">
+            <a href="mailto:kevin.forsans@gmail.com" target="_blank"
+              >kevin.forsans@gmail.com</a
+            >
           </div>
-          <div class="single-project">
-            <h2 class="title">Lorem</h2>
-            <span class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              nisi, placeat nulla dolores obcaecati hic laboriosam praesentium
-              officiis temporibus ullam enim id ratione eligendi ipsa voluptates
-              quae quas? Cumque, placeat!
-            </span>
+          <div>
+            <a href="./resources/documents/maquettes_ui.pdf" target="_blank"
+              >Voir les maquettes</a
+            >
+          </div>
+        </div>
+        <div class="four-circles">
+          <div class="two-circles">
+            <span class="circle up"></span>
+            <span class="circle down"></span>
+          </div>
+          <div class="two-circles">
+            <span class="circle up"></span>
+            <span class="circle down"></span>
+          </div>
+        </div>
+        <div class="text right">
+          <div class="up">
+            <a href="https://fr.linkedin.com/in/kforsans" target="_blank"
+              >Linkedin</a
+            >
+          </div>
+          <div>
+            <a
+              href="./resources/documents/note_intention_Kevin_FORSANS"
+              target="_blank"
+              >Voir la note d'intention</a
+            >
           </div>
         </div>
       </div>

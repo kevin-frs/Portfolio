@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#6bd844"
+      "value": "#fff"
     },
     "shape": {
       "type": "circle",
@@ -20,7 +20,7 @@
         "nb_sides": 5
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "",
         "width": 100,
         "height": 100
       }
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 3,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#9bf984",
+      "color": "#84adff",
       "opacity": 0.4,
       "width": 0.7891476416322727
     },

@@ -6,13 +6,15 @@ section#presentation div.container{
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 section#presentation img{
     aspect-ratio: 1/1;
     background-color: aliceblue;
     width: 300px;
-    overflow: unset;
+    border-radius: 20px;
+    box-shadow: #0006 0 0 20px;
 }
 
 section#presentation div.text{
@@ -24,4 +26,18 @@ section#presentation div.text{
 section#presentation h2{
     text-align: left;
     margin-bottom: 0.5em;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    section#presentation div.container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section#presentation div.text{
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
 }

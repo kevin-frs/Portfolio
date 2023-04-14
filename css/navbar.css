@@ -3,28 +3,150 @@ nav{
     position:fixed;
     width: 100%;
     z-index: 100;
+    backdrop-filter: blur(5px);
+    box-shadow: #0009 0 5px 10px;
 }
 
 nav a{
     font-family: krona_one;
     text-decoration: none;
-    color: var(--global-light-gray)
+    color: var(--global-light-gray);
+    text-shadow: var(--global-black) 0 0 10px;
 }
+
+/*Animate on hover*/
+
+nav .right a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--global-white);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out, box-shadow 0s ease-out 0.3s;
+    box-shadow: inset var(--global-light-tint) -150px 0;
+}
+
+nav .right a:hover::after {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    box-shadow: inset var(--global-light-tint) 0px 0;
+}
+
+/*********/
 
 nav div.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    padding: 0 50px;
     margin: 0 auto;
+    transition: all 0.1s linear;
+}
+
+nav div.container div.left a{
+    font-size: 25px;
+}
+
+nav div.container div.left{
+    order: 0
 }
 
 nav div.container div.right{
     display: flex;
     justify-content: space-between;
+    order: 2
 }
 
 nav div.container div.right a{
-    padding: 0 30px;
+    padding-left: 45px;
+    margin-top: 4px;
 }
+
+/* Responsive */
+
+@media (max-width: 980px) {
+    nav div.container div.right a{
+        font-size: 80%;
+    }
+}
+
+/* Burger menu */
+
+@media (min-width: 768px) {
+    .burger-icon{
+        display: none;
+        order: 1
+    }
+}
+
+@media (max-width: 768px) {
+    nav .right{
+        display: none !important;
+    }
+
+}
+
+    /* Sidenav menu */
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -250px;
+    background-color: #000c;
+    backdrop-filter: blur(5px);
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 12px 8px 12px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: krona_one;
+    color: var(--global-white);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--global-white);
+    margin: 7px 0;
+    border-radius: 10px;
+  }
+
+  .burger-icon{
+    order: 3;
+  }
+  

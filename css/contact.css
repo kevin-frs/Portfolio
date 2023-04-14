@@ -1,0 +1,90 @@
+section#contact{
+    background-color: var(--global-light-tint);
+}
+
+section#contact div.container{
+    padding: 50px 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+section#contact div.container div.text.left{
+    text-align: end;
+}
+
+section#contact div.container div.text div.up{
+    margin-bottom: 1em;
+    margin-top: -0.1em;
+}
+
+section#contact div.container div.text a{
+    display: inline-block;
+}
+
+/*Animate on hover*/
+
+section#contact a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--global-black);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+section#contact  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*********/
+
+/* Circles */
+
+section#contact div.container div.four-circles{
+    display: flex;
+
+}
+
+section#contact div.container div.four-circles div.two-circles{
+    margin: 0 10px;
+}
+
+section#contact div.container div.four-circles span.circle{
+    background-color: var(--global-black);
+    display: block;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50px;
+}
+
+section#contact div.container div.four-circles span.circle.up{
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    section#contact div.container{
+        display: block;
+    }
+
+    section#contact div.container div.left,
+    section#contact div.container div.right
+    {
+        text-align: center !important;
+    }
+
+    section#contact div.container div.text div
+    {
+        margin: 10px 0 !important;
+    }
+
+    section#contact div.container div.four-circles{
+        display: none;
+    }
+}

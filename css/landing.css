@@ -1,8 +1,8 @@
 @keyframes slide-bottom {
     0% {
-        transform: translateY(-70px);
+        transform: translateY(-100px);
         opacity: 0;
-        filter: blur(8px);
+        filter: blur(10px);
       }
     20% {
       transform: translateY(-100px);
@@ -17,8 +17,8 @@
   }
 
 section#particles-js{
-    background-color: var(--global-dark-gray);
-    color: var(--global-white)
+    color: var(--global-white);
+    background-image: radial-gradient(ellipse at bottom, #051327, #091121, #090c13, #080408, #000000);
 }
 
 section#particles-js div.content{
@@ -65,4 +65,22 @@ section#particles-js span.function{
     line-height: 0.3em;
     text-transform: uppercase;
     text-shadow: #fff4 0 0 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  section#particles-js span.name{
+      font-size: 40px;
+      line-height: 40px;
+  }
+  
+  section#particles-js span.surname{
+      font-size: 65px;
+  }
+  
+  section#particles-js span.function{
+      font-size: 30px;
+      line-height: 40px;
+  }
 }

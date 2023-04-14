@@ -5,6 +5,7 @@ section#abilities{
 
 section#abilities div.container{
     padding: 50px 0;
+    max-width: 900px;
 }
 
 section#abilities div.box-grid{
@@ -15,14 +16,13 @@ section#abilities div.box-grid{
 
 section#abilities div.box-grid div.box{
     background-color: var(--global-white);
-    border-radius: 30px;
+    border-radius: 20px;
     color: var(--global-black);
     padding: 6% 12%;
     box-shadow:#0004 0 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
 }
 
 section#abilities div.box-grid div.box-1{
@@ -36,5 +36,50 @@ section#abilities div.box-grid div.box-2{
 section#abilities div.box-grid div.box-3{
     z-index: 1;
     position: relative;
-    transform: translateX(13%) translateY(-12%);
+    transform: translateX(11%) translateY(-11%);
+}
+
+section#abilities div.abilities-list{
+    width: 100%;
+    margin-top: 1em;
+}
+
+section#abilities div.abilities-list a.single-ability{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0.7em auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+section#abilities div.abilities-list a.single-ability:hover{
+    cursor: pointer;
+    transform: scale(102%);
+}
+
+section#abilities div.abilities-list a.single-ability img.ability-img{
+    height: 70px;
+    width: 70px;
+    filter: drop-shadow(#0006 0 0 3px);
+}
+
+section#abilities div.abilities-list a.single-ability span.ability-name{
+    color: green;
+    text-align: end;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    section#abilities div.box-grid div{
+        transform: none !important;
+        margin-bottom: 20px;
+    }
+
+    section#abilities div.box-grid{
+        display: block;
+        padding: 50px 0 0;
+    }
+
 }

@@ -27,3 +27,11 @@ section#projects div.single-project h2.title{
     text-align: left;
     margin-bottom: 20px;
 }
+
+/* Responsive */
+
+@media (max-width: 768px){
+    section#projects div.single-project{
+        padding: 30px;
+    }
+}
